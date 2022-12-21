@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace LineComparision
 {
-    internal class Program
+    class UC2Line
     {
-        static void Main(string[] args)
+        public static void main(string[] args)
         {
-            Console.WriteLine("Welcome To Line Comparision");
             Console.WriteLine("Please Enter The X1 and Y1 co-ordinates");
             double X1 = Convert.ToDouble(Console.ReadLine());
             double Y1 = Convert.ToDouble(Console.ReadLine());
