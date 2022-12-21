@@ -12,6 +12,7 @@ namespace LineComparision
         {
             Console.WriteLine("Welcome To Line Comparision");
             Console.WriteLine("Please Enter The X1 and Y1 co-ordinates");
+
             double X1 = Convert.ToDouble(Console.ReadLine());
             double Y1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please Enter The X2 and Y2 co-ordinates");
@@ -30,9 +31,11 @@ namespace LineComparision
             Console.WriteLine("Length of Line 2 is: " + length2);
 
             if (length2 == length1)
-                Console.WriteLine("Both Line are equal");
+                Console.WriteLine("Line 2 is equal to Line 1");
+            else if (length2 > length1)
+                Console.WriteLine("Line 2 is greater than Line 1");
             else
-                Console.WriteLine("Both Line are not equal");
+                Console.WriteLine("Line 2 is less than Line1");
             Console.ReadLine();
         }
     }
